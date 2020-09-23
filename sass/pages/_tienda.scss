@@ -1,0 +1,91 @@
+#tienda-hero {
+    grid-area: tienda-hero;
+    background-color: #ebf6f8;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    @media (max-width:768px) {
+        flex-direction: column;
+        height: 1400px;
+    }
+        .tienda-hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+            h3 {
+                text-align: center;
+            }
+            @media (max-width:768px) {
+                width: 100%;
+               h3 {
+                   text-align: left;
+               } 
+            }
+        }
+}
+#tienda-productos {
+    grid-area: tienda-productos;
+    background-color: #fcf4ed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+#tienda-productos .tienda-productos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    @media (max-width:768px) {
+        flex-direction: column;
+    }
+}
+#tienda-productos article {
+    width: 400px;
+    padding: 20px;
+        a{
+            text-decoration: none;
+        }
+}
+#tienda-libros {
+    grid-area: tienda-libros;
+    background-color: #ebf6f8;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    @media (max-width:768px) {
+        flex-direction: column;
+    }
+}
+/*
+.tienda-libros {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 50px;
+    width: 40%;
+}*/
+.tienda-libros-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 45%;
+    padding-top: 50px;
+    @media (max-width:768px) {
+        justify-content: center;
+        width: 100%;
+        padding: 20px;
+        img {
+            width: 100%;
+        }
+    }
+}
+.tienda__hero_img-phone {
+    @media (max-width:768px) {
+        width: 50%;
+    }
+}
+

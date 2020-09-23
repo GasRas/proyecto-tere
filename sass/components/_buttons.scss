@@ -1,0 +1,46 @@
+.button {
+    border-style: solid;
+    border-width: 1px;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    font-family: 'Lora', serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #df9862;
+    background-color: none;
+    border-color: #df9862;
+    transition: background-color 1s, border-color 0.8s;
+    @media (max-width:768px) {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+}
+.button:hover {
+    background-color: white;
+    border-color: white;
+    text-decoration: none;
+    color: #df9862;
+}
+.button-claro {
+    border-style: solid;
+    border-width: 1px;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    font-family: 'Lora', serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    background-color: none;
+    border-color: white;
+    transition: background-color 1s, border-color 0.8s;
+}
+.button-claro:hover {
+    background-color: white;
+    border-color: white;
+    color: #df9862;
+    text-decoration: none;
+}

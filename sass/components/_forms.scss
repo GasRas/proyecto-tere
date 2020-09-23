@@ -1,0 +1,8 @@
+input, textarea,select   {
+    padding: 10px;
+    display: inline-block;
+    @include fuente ($color-gris, 17px, normal, $fuente-texto);
+}
+label {
+    @include fuente ($color-gris, 17px, normal, $fuente-texto);
+}
