@@ -26,14 +26,16 @@ display: flex;
 flex-direction: column;
 align-items: center;
 padding: 60px;
-article {
-    width: 400px;
-    padding: 20px;
-    }
-        a{
-        text-decoration: none;
+    article {
+        padding: 20px;
+        @media (min-width: 769px) {
+        width: 400px;
         }
-}
+    }
+            a{
+            text-decoration: none;
+            }
+    }
 .blog-posts {
 display: flex;
 justify-content: center;

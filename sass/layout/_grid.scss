@@ -7,21 +7,18 @@
                         "index-publicaciones"
                         "index-podcast"
                         "footer";
-                        /* "footer1 footer-menu footer-rrss"; */
     grid-template-rows: 80px 100vh 350px 1.3fr 1.1fr 1.3fr ; 
     grid-template-columns: 100%;
-/*     grid-template-columns: 100% 100% 100% 100% 100% 100% 33% 33% 33%;
- */
- @media (max-width:768px) {
-    grid-template-areas:     "index-hero"
-                            "index-conectado"
-                            "index-vivo"
-                            "index-publicaciones"
-                            "index-podcast"
-                            "footer";
-    grid-template-rows: 100vh 430px 0.6fr 1.1fr 0.6fr ; 
- }
- }
+    @media (max-width:768px) {
+        grid-template-areas:     "index-hero"
+                                "index-conectado"
+                                "index-vivo"
+                                "index-publicaciones"
+                                "index-podcast"
+                                "footer";
+        grid-template-rows: 100vh 430px 0.6fr 1.1fr 0.6fr ; 
+    }
+    }
 
  #grillabio {
     display: grid;
@@ -72,7 +69,7 @@
                         "tienda-productos"
                         "tienda-libros"
                         "footer";
-        grid-template-rows:  800px  ; 
+        grid-template-rows:  800px 1700px 1000px  ; 
     }
 }
 #grillaempieza {
@@ -86,7 +83,7 @@
         grid-template-areas:
                         "empieza"
                         "footer";
-        grid-template-rows: 800px  ; 
+        grid-template-rows: 1400px  ; 
     }
 }
 

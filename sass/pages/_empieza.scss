@@ -10,10 +10,7 @@ section#empieza {
         }
 }
 .empieza__form {
-/*     display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    */    width: 55%;
+    width: 60%;
     @media (max-width:768px) {
     width: 100%;
     }
@@ -22,21 +19,34 @@ section#empieza {
     display: flex;
     flex-direction: column;
     padding-right: 30px;
+    @media (max-width:768px) {
+        padding: 10px;
+    }
 }
 .empieza__form--row {
     display: flex;
+    @media (max-width:768px) {
+        flex-direction: column;
+        }
 }
 .empieza__img {
     display: flex;
     justify-content: center;
-    width: 45%;
+    width: 40%;
     @media (max-width:768px) {
         width: 100%;
     }
 }
-.empieza__form--h4 {
+/* .empieza__form--h4 {
     padding: 20px 0 10px 0;
-}
+} */
 .empieza__form--top-margin{
     margin-top: 10px;
 }
+.empieza__img-phone {
+    @media (max-width:768px) {
+        width: 80%;
+        margin: 20px;
+    }
+}
+

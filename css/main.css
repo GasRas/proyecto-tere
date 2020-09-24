@@ -11,11 +11,8 @@ li {
 #grillaindex {
   display: grid;
   grid-template-areas: "header" "index-hero" "index-conectado" "index-vivo" "index-publicaciones" "index-podcast" "footer";
-  /* "footer1 footer-menu footer-rrss"; */
   grid-template-rows: 80px 100vh 350px 1.3fr 1.1fr 1.3fr;
   grid-template-columns: 100%;
-  /*     grid-template-columns: 100% 100% 100% 100% 100% 100% 33% 33% 33%;
-   */
 }
 @media (max-width: 768px) {
   #grillaindex {
@@ -61,7 +58,7 @@ li {
 @media (max-width: 768px) {
   #grillatienda {
     grid-template-areas: "tienda-hero" "tienda-productos" "tienda-libros" "footer";
-    grid-template-rows: 800px;
+    grid-template-rows: 800px 1700px 1000px;
   }
 }
 
@@ -74,7 +71,7 @@ li {
 @media (max-width: 768px) {
   #grillaempieza {
     grid-template-areas: "empieza" "footer";
-    grid-template-rows: 800px;
+    grid-template-rows: 1400px;
   }
 }
 
@@ -180,15 +177,12 @@ footer ul li a {
   color: #756663;
   margin-left: 80px;
 }
-
-/*  #footer1{
-    display: flex;
-    justify-content: center;
-    background-color: rgb(66, 66, 66);
-    padding: 2%;
-    grid-area: footer1;
+@media (max-width: 768px) {
+  footer ul li a {
+    margin-left: 0px;
+  }
 }
- */
+
 .footer {
   -ms-grid-row: 7;
   -ms-grid-column: 1;
@@ -198,38 +192,36 @@ footer ul li a {
   padding: 2%;
   grid-area: footer;
 }
+
 #grillabio > .footer {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
 }
+
 #grillablog > .footer {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
 }
+
 #grillatienda > .footer {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
 }
+
 #grillaempieza > .footer {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
 }
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer div {
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+}
 
-/* #footer-menu{
-    display: flex;
-    justify-content: center;
-    background-color: rgb(66, 66, 66);
-    padding: 2%;
-    grid-area: footer-menu;
-}
-#footer-rrss{
-    display: flex;
-    justify-content: center;
-    background-color: rgb(66, 66, 66);
-    padding: 2%;
-    grid-area: footer-rrss;
-}
- */
 #bio-hola {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -335,8 +327,12 @@ footer ul li a {
   padding: 60px;
 }
 #blog-posts article {
-  width: 400px;
   padding: 20px;
+}
+@media (min-width: 769px) {
+  #blog-posts article {
+    width: 400px;
+  }
 }
 #blog-posts a {
   text-decoration: none;
@@ -380,11 +376,7 @@ section#empieza {
 }
 
 .empieza__form {
-  /*     display: flex;
-      align-items: flex-start;
-      flex-direction: column;
-      */
-  width: 55%;
+  width: 60%;
 }
 @media (max-width: 768px) {
   .empieza__form {
@@ -397,15 +389,25 @@ section#empieza {
   flex-direction: column;
   padding-right: 30px;
 }
+@media (max-width: 768px) {
+  .empieza__form--col {
+    padding: 10px;
+  }
+}
 
 .empieza__form--row {
   display: flex;
+}
+@media (max-width: 768px) {
+  .empieza__form--row {
+    flex-direction: column;
+  }
 }
 
 .empieza__img {
   display: flex;
   justify-content: center;
-  width: 45%;
+  width: 40%;
 }
 @media (max-width: 768px) {
   .empieza__img {
@@ -413,12 +415,18 @@ section#empieza {
   }
 }
 
-.empieza__form--h4 {
-  padding: 20px 0 10px 0;
-}
-
+/* .empieza__form--h4 {
+    padding: 20px 0 10px 0;
+} */
 .empieza__form--top-margin {
   margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .empieza__img-phone {
+    width: 80%;
+    margin: 20px;
+  }
 }
 
 #index-hero {
@@ -918,6 +926,19 @@ label {
   font-size: 17px;
   font-weight: normal;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-bottom: 0rem;
+}
+
+textarea {
+  height: 100px;
+  width: 605px;
+}
+@media (max-width: 768px) {
+  textarea {
+    height: 150px;
+    width: 95%;
+    margin: 10px;
+  }
 }
 
 .nolink {
@@ -986,7 +1007,7 @@ h3 {
 }
 @media (max-width: 768px) {
   h3 {
-    font-size: 38px;
+    font-size: 36px;
   }
 }
 
@@ -998,7 +1019,7 @@ h3 {
 }
 @media (max-width: 768px) {
   .h3-claro {
-    font-size: 38px;
+    font-size: 36px;
   }
 }
 
@@ -1011,7 +1032,7 @@ h4 {
 }
 @media (max-width: 768px) {
   h4 {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 

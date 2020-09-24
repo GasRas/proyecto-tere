@@ -10,36 +10,23 @@ footer{
             font-size: 16px;
             color: #756663;
             margin-left: 80px;
+            @media (max-width:768px) {
+                margin-left: 0px;
+            }
+        
         }
 }
-/*  #footer1{
-    display: flex;
-    justify-content: center;
-    background-color: rgb(66, 66, 66);
-    padding: 2%;
-    grid-area: footer1;
-}
- */
  .footer{
     display: flex;
     justify-content: center;
     background-color: rgb(66, 66, 66);
     padding: 2%;
     grid-area: footer;
-}
-
-/* #footer-menu{
-    display: flex;
-    justify-content: center;
-    background-color: rgb(66, 66, 66);
-    padding: 2%;
-    grid-area: footer-menu;
-}
-#footer-rrss{
-    display: flex;
-    justify-content: center;
-    background-color: rgb(66, 66, 66);
-    padding: 2%;
-    grid-area: footer-rrss;
-}
- */
+    @media (max-width:768px) {
+        flex-direction: column;
+        div {
+                padding-top: 10px;
+                padding-left: 10px;
+            }
+    }
+    }

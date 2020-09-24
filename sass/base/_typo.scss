@@ -42,7 +42,7 @@ h3 {
     font-family: 'Lora', serif;
     font-weight: normal;
     @media (max-width:768px) {
-        font-size: 38px;
+        font-size: 36px;
     }
 }
 .h3-claro {
@@ -51,14 +51,14 @@ h3 {
     font-family: 'Lora', serif;
     font-weight: normal;
     @media (max-width:768px) {
-        font-size: 38px;
+        font-size: 36px;
     }
 }
 h4 {
     @include fuente ($color-gris, 24px, normal, $fuente-texto);
     padding: 10px 0 10px 0;
     @media (max-width:768px) {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 h5 {
