@@ -21,8 +21,8 @@
     color: white;
     font-size: 90px;
     font-family: 'Lora', serif;
-    @media (max-width:768px) {
-        font-size: 68px;
+    @media (max-width:767px) {
+        font-size: 64px;
         }
 }   
 #index-conectado {
@@ -38,44 +38,19 @@
 .index-conectado {
     width: 50%;
     padding-left: 100px;
-    @media (max-width:768px) {
+    @media (max-width: 1199px) {
         width: auto;
         padding-left: 0px;
     }
 }
-#index-publicaciones {
-    grid-area: index-publicaciones;
-    background-color: #fff8ee;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 60px;
-        div {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 10px 0 10px;
-            flex-direction: row;
-            @media (max-width:768px) {
-                flex-direction: column;
-            }
-        }
-        article {
-            width: 400px;
-            padding: 20px;
-            a{
-                text-decoration: none;
-            }
-        }
-}
-#index-podcast {
+ #index-podcast {
     grid-area: index-podcast;
     background-color: #ebf6f8;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
-    @media (max-width:768px) {
+    @media (max-width: 1199px) {
         flex-direction: column;
     }
     div {
@@ -83,13 +58,10 @@
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
-            @media (max-width:768px) {
-                align-items: center;
-            }
     }
 }
 .index__podcast_img-phone {
-    @media (max-width:768px) {
+    @media (max-width: 1199px) {
         width: 95%;
     }
 }
@@ -100,12 +72,12 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    @media (max-width:768px) {
+    @media (max-width: 1199px) {
         flex-direction: column;
     }
     .index-vivo-texto {
         width: 40%;
-        @media (max-width:768px) {
+        @media (max-width: 1199px) {
             width: auto;
         }
       }
@@ -120,7 +92,7 @@ height: 468px;
 display: flex;
 align-items: center;
 justify-content: center;
-@media (max-width:768px) {
+@media (max-width: 1199px) {
     padding: 5px;
     width: fit-content;
     background-size: contain;
@@ -129,7 +101,7 @@ justify-content: center;
 }
 .vivo-screenshot {
     width: 595px;
-    @media (max-width:768px) {
+    @media (max-width: 1199px) {
         width: 80%;
     }
 }
@@ -138,7 +110,7 @@ justify-content: center;
     height: 100%;
 }
 .margin_media {
-    @media (max-width:768px) {
-        padding: 10px;
+    @media (max-width: 1199px) {
+        padding: 20px;
     }
 }

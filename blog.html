@@ -8,29 +8,58 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="stylesheet" href="css/bootstrap.css" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/main.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 <body>
     <div id="grillablog">
         <header>
-            <ul>
-                <li>
-                <a class="text-decoration-none" href="bio.html">Sobre mí</a>
-                </li>
-                <li>
-                <a class="text-decoration-none" href="blog.html">Blog</a>
-                </li>
-                <li>
-                <a class="text-decoration-none" href="index.html"><img src="img/logo_gris_small.png"></a>
-                </li>
-                <li>
-                <a class="text-decoration-none" href="tienda.html">Tienda</a>
-                </li>
-                <li>
-                <a class="text-decoration-none" href="empieza.html">Empieza YA</a>
-                </li>
-            </ul>
+            <div>
+                <a href="#nav" class="nav_menu_resp-open"><img src="img/hamb_menu.png" alt="menu open responsive" ></a>
+                <a href="index.html" class="nav_menu_resp_logo-close"><img src="img/logo_blanco_resp.png" alt="logo responsive"></a>
+                <nav id="nav">
+                    <a href="#" class="nav_menu_resp-close"><img src="img/hamb_close.png" alt="menu close responsive" ></a>
+                    <div class="nav_menu-desktop">
+                        <ul >
+                            <li>
+                            <a class="text-decoration-none" href="bio.html">Sobre mí</a>
+                            </li>
+                            <li>
+                            <a class="text-decoration-none" href="blog.html">Blog</a>
+                            </li>
+                            <li>
+                            <a class="text-decoration-none nav_logo" href="index.html"><img src="img/logo_gris_small.png"></a>
+                            </li>
+                            <li>
+                            <a class="text-decoration-none" href="tienda.html">Tienda</a>
+                            </li>
+                            <li>
+                            <a class="text-decoration-none" href="empieza.html">Empieza YA</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav_menu-resp">
+                         <ul>
+                            <li>
+                                <a class="text-decoration-none " href="index.html"><img src="img/logo_blanco_small.png" class="nav_menu_resp_logo-open"></a>
+                            </li>
+                            <li>
+                            <a class="text-decoration-none" href="bio.html">Sobre mí</a>
+                            </li>
+                            <li>
+                            <a class="text-decoration-none" href="blog.html">Blog</a>
+                            </li>
+                            
+                            <li>
+                            <a class="text-decoration-none" href="tienda.html">Tienda</a>
+                            </li>
+                            <li>
+                            <a class="text-decoration-none" href="empieza.html">Empieza YA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </header>
         <section id="blog-header">
             <div class="blog-header">
@@ -39,22 +68,22 @@
             </div>
         </section>
         <section id="blog-posts">
-            <h3>Ultimas publicaciones</h3>
+            <h3>Últimas publicaciones</h3>
             <div class="blog-posts" >
                 <article>
-                    <a href="blog.html"><img src="img/news_01.jpg" width="300px">
+                    <a href="blog.html"><img src="img/news_01.jpg" class="publicaciones_img">
                     <h4>Que significa ser el super activador</h4>
                     <p>Ser super activador significa poner en movimiento todos tus deseos para conquistar todos tus objetivos. </p>
                     </a>
                 </article>
                 <article>
-                    <a href="blog.html"><img src="img/news_02.jpg" width="300px">
+                    <a href="blog.html"><img src="img/news_02.jpg" class="publicaciones_img">
                     <h4>Herramientas para calmar la ansiedad en Coronavirus</h4>
                     <p>En estos momentos de pandemia te guiaré para poder calmar la ansiedad y sentirte pleno.</p></a>
                     </a>
                 </article>
                 <article>
-                    <a href="blog.html"><img src="img/news_03.jpg" width="300px">
+                    <a href="blog.html"><img src="img/news_03.jpg" class="publicaciones_img">
                     <h4>Guia para principiantes en meditación</h4>
                     <p>Así que quieres empezar con la meditación, te ayudare para que puedas ejercitar esta maravillosa actividad.</p>
                     </a>
@@ -64,19 +93,19 @@
                 <button type="button" class=" button" data-toggle="collapse" data-target="#demo2">Más articulos</button>
                 <div id="demo2" class="collapse blog-posts">
                     <article>
-                        <a href="blog.html"><img src="img/news_01.jpg" width="300px">
+                        <a href="blog.html"><img src="img/news_01.jpg"class="publicaciones_img">
                         <h4>Que significa ser el super activador</h4>
                         <p>Ser super activador significa poner en movimiento todos tus deseos para conquistar todos tus objetivos. </p>
                         </a>
                     </article>
                     <article>
-                        <a href="blog.html"><img src="img/news_02.jpg" width="300px">
+                        <a href="blog.html"><img src="img/news_02.jpg" class="publicaciones_img">
                         <h4>Herramientas para calmar la ansiedad en Coronavirus</h4>
                         <p>En estos momentos de pandemia te guiaré para poder calmar la ansiedad y sentirte pleno.</p></a>
                         </a>
                     </article>
                     <article>
-                        <a href="blog.html"><img src="img/news_03.jpg" width="300px">
+                        <a href="blog.html"><img src="img/news_03.jpg" class="publicaciones_img">
                         <h4>Guia para principiantes en meditación</h4>
                         <p>Así que quieres empezar con la meditación, te ayudare para que puedas ejercitar esta maravillosa actividad.</p>
                         </a>

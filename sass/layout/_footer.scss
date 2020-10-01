@@ -1,14 +1,14 @@
 footer{
     display: flex;
     justify-content: center;
-    background-color: rgb(66, 66, 66);
+    background-color: #756663;
     padding: 2%;
     grid-area: footer;
         ul li a{
             text-decoration: none;
             font-family: 'Lora', serif;
-            font-size: 16px;
-            color: #756663;
+            font-size: 17px;
+            color: white;
             margin-left: 80px;
             @media (max-width:768px) {
                 margin-left: 0px;
@@ -19,7 +19,7 @@ footer{
  .footer{
     display: flex;
     justify-content: center;
-    background-color: rgb(66, 66, 66);
+    background-color:#756663;
     padding: 2%;
     grid-area: footer;
     @media (max-width:768px) {

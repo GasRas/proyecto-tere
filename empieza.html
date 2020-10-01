@@ -14,23 +14,52 @@
 <body>
     <div id="grillaempieza">
         <header>
-            <ul>
-            <li>
-                <a class="text-decoration-none" href="bio.html">Sobre mí</a>
-            </li>
-            <li>
-                <a class="text-decoration-none" href="blog.html">Blog</a>
-            </li>
-            <li>
-                <a class="text-decoration-none" href="index.html"><img src="img/logo_gris_small.png"></a>
-            </li>
-            <li>
-                <a class="text-decoration-none" href="tienda.html">Tienda</a>
-            </li>
-            <li>
-                <a class="text-decoration-none" href="empieza.html">Empieza YA</a>
-            </li>
-        </ul>
+            <div>
+                <a href="#nav" class="nav_menu_resp-open"><img src="img/hamb_menu.png" alt="menu open responsive" ></a>
+                <a href="index.html" class="nav_menu_resp_logo-close"><img src="img/logo_blanco_resp.png" alt="logo responsive"></a>
+                <nav id="nav">
+                    <a href="#" class="nav_menu_resp-close"><img src="img/hamb_close.png" alt="menu close responsive" ></a>
+                    <div class="nav_menu-desktop">
+                        <ul >
+                            <li>
+                            <a class="text-decoration-none" href="bio.html">Sobre mí</a>
+                            </li>
+                            <li>
+                            <a class="text-decoration-none" href="blog.html">Blog</a>
+                            </li>
+                            <li>
+                            <a class="text-decoration-none nav_logo" href="index.html"><img src="img/logo_gris_small.png"></a>
+                            </li>
+                            <li>
+                            <a class="text-decoration-none" href="tienda.html">Tienda</a>
+                            </li>
+                            <li>
+                            <a class="text-decoration-none" href="empieza.html">Empieza YA</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav_menu-resp">
+                         <ul>
+                            <li>
+                                <a class="text-decoration-none " href="index.html"><img src="img/logo_blanco_small.png" class="nav_menu_resp_logo-open"></a>
+                            </li>
+                            <li>
+                            <a class="text-decoration-none" href="bio.html">Sobre mí</a>
+                            </li>
+                            <li>
+                            <a class="text-decoration-none" href="blog.html">Blog</a>
+                            </li>
+                            
+                            <li>
+                            <a class="text-decoration-none" href="tienda.html">Tienda</a>
+                            </li>
+                            <li>
+                            <a class="text-decoration-none" href="empieza.html">Empieza YA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </header>
         <section id="empieza">
             <div class="empieza__img">
@@ -39,7 +68,7 @@
             <div class="empieza__form margin_media">
                 <div class="wow animate__animated animate__fadeInRight">
                     <h5>Estoy haciendo meditaciones super faciles guiadas para ti!</h5>
-                    <h1>Meditaciones guiadas</h1>
+                    <h1 class="empieza_h1_resp">Meditaciones guiadas</h1>
                 </div>       
                 <div class="wow animate__animated animate__fadeIn animate__delay-1s">
                     <form method="GET">
@@ -47,7 +76,7 @@
                                 <div class="empieza__form--row">
                                     <div class="empieza__form--col">
                                         <input type="text" name="nombre_apellido" placeholder="Nombre y apellido"/>
-                                        <h4 class="empieza__form--h4">Como te enteraste de Gaby?</h4>
+                                        <h4 class="empieza__form--h4">¿Cómo te enteraste de Gaby?</h4>
                                             <div>
                                                 <input type="radio"  id="recomendacion" name="origen" value="recomendacion" class="form">
                                                 <label for="recomendacion">Recomendación personal</label>
@@ -67,7 +96,7 @@
                                     </div>
                                     <div class="empieza__form--col">
                                         <input type="text" name="email" placeholder="Email"/>
-                                        <h4 class="empieza__form--h4">Cuanto sabes de meditación?</h4>
+                                        <h4 class="empieza__form--h4">¿Cuánto sabes de meditación?</h4>
                                         <select name="nivel_meditacion" >
                                             <option value="1">Principiante</option>
                                             <option value="2">Intermedio</option>
@@ -78,9 +107,9 @@
                                 <div>
                                     <textarea name="comentarios" class="empieza__form--top-margin">Ingresa tus comentarios</textarea>
                                 </div>
-                                <div class="empieza__form--top-margin">
-                                    <input class="button" type="submit" value="Empecemos!"/>
-                                    <input class="button" type="reset" value="Limpiar formulario"/>
+                                <div class="empieza__form--padding">
+                                    <input class="button button-centrado" type="submit" value="Empecemos!"/>
+                                    <input class="button button-centrado" type="reset" value="Limpiar formulario"/>
                                     <p class="texto-nota empieza__form--top-margin">*Cuando envíe su nombre y correo electrónico, acepta nuestro boletín de noticias semanal por correo electrónico y las próximas actualizaciones relevantes.</p>
                                 </div>
                         </form>       

@@ -2,6 +2,9 @@ input, textarea,select   {
     padding: 10px;
     display: inline-block;
     @include fuente ($color-gris, 17px, normal, $fuente-texto);
+    @media (min-width: 768px) and (max-width: 1199px){
+        margin: 5px;
+    }
 }
 label {
     @include fuente ($color-gris, 17px, normal, $fuente-texto);
@@ -10,9 +13,14 @@ label {
 textarea {
     height: 100px;
     width: 605px;
-    @media (max-width:768px) {
+    @media (max-width:767px) {
         height: 150px;
         width: 95%;
         margin: 10px;
     }
+    @media (min-width: 768px) and (max-width: 1199px){
+        width: 100%;
+        margin: 0;
+    }
 }
+

@@ -14,56 +14,85 @@
 <body>
     <div id="grillatienda">
         <header>
-            <ul>
-            <li>
-                <a class="text-decoration-none" href="bio.html">Sobre mí</a>
-            </li>
-            <li>
-                <a class="text-decoration-none" href="blog.html">Blog</a>
-            </li>
-            <li>
-                <a class="text-decoration-none" href="index.html"><img src="img/logo_gris_small.png"></a>
-            </li>
-            <li>
-                <a class="text-decoration-none" href="tienda.html">Tienda</a>
-            </li>
-            <li>
-                <a class="text-decoration-none" href="empieza.html">Empieza YA</a>
-            </li>
-        </ul>
+            <div>
+                <a href="#nav" class="nav_menu_resp-open"><img src="img/hamb_menu.png" alt="menu open responsive" ></a>
+                <a href="index.html" class="nav_menu_resp_logo-close"><img src="img/logo_blanco_resp.png" alt="logo responsive"></a>
+                <nav id="nav">
+                    <a href="#" class="nav_menu_resp-close"><img src="img/hamb_close.png" alt="menu close responsive" ></a>
+                    <div class="nav_menu-desktop">
+                        <ul >
+                            <li>
+                            <a class="text-decoration-none" href="bio.html">Sobre mí</a>
+                            </li>
+                            <li>
+                            <a class="text-decoration-none" href="blog.html">Blog</a>
+                            </li>
+                            <li>
+                            <a class="text-decoration-none nav_logo" href="index.html"><img src="img/logo_gris_small.png"></a>
+                            </li>
+                            <li>
+                            <a class="text-decoration-none" href="tienda.html">Tienda</a>
+                            </li>
+                            <li>
+                            <a class="text-decoration-none" href="empieza.html">Empieza YA</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav_menu-resp">
+                         <ul>
+                            <li>
+                                <a class="text-decoration-none " href="index.html"><img src="img/logo_blanco_small.png" class="nav_menu_resp_logo-open"></a>
+                            </li>
+                            <li>
+                            <a class="text-decoration-none" href="bio.html">Sobre mí</a>
+                            </li>
+                            <li>
+                            <a class="text-decoration-none" href="blog.html">Blog</a>
+                            </li>
+                            
+                            <li>
+                            <a class="text-decoration-none" href="tienda.html">Tienda</a>
+                            </li>
+                            <li>
+                            <a class="text-decoration-none" href="empieza.html">Empieza YA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </header>
         <section id="tienda-hero">
-            <div>
+            <div class="centrado">
                 <img src="img/smartphone.png" class="tienda__hero_img-phone" alt="podcast">
             </div>
-            <div class="tienda-hero margin_media wow animate__animated animate__fadeInDown">
-                <h5>Gratis con Membresia Plus o Trial por 30 dias gratis!</h5>
+            <div class="tienda-hero margin_media wow animate__animated animate__fadeInRight">
+                <h5>GRATIS CON MEMBRESÍA PLUS O TRIAL POR 30 DÍAS!</h5>
                 <h1>Tu eres tu propio gurú</h1>
                 <h3 >6 Mensajes para ayudarte a avanzar en los tiempos de dificultad con esperanza</h3>
-                <a class="button" href="tienda.html">Escucha ahora!</a>
+                <a class="button" href="tienda.html">¡ESCUCHA AHORA!</a>
             </div>
         </section>
-        <section id="tienda-productos">
-            <h3>Ultimas publicaciones</h3>
-            <div class="tienda-productos">
-                <article>
-                    <a href="blog.html"><img src="img/news_01.jpg" width="300px">
-                    <h4>Que significa ser el super activador</h4>
-                    <p>Ser super activador significa poner en movimiento todos tus deseos para conquistar todos tus objetivos. </p>
-                    </a>
-                </article>
-                <article>
-                    <a href="blog.html"><img src="img/news_02.jpg" width="300px">
-                    <h4>Herramientas para calmar la ansiedad en Coronavirus</h4>
-                    <p>En estos momentos de pandemia te guiaré para poder calmar la ansiedad y sentirte pleno.</p></a>
-                    </a>
-                </article>
-                <article>
-                    <a href="blog.html"><img src="img/news_03.jpg" width="300px">
-                    <h4>Guia para principiantes en meditación</h4>
-                    <p>Así que quieres empezar con la meditación, te ayudare para que puedas ejercitar esta maravillosa actividad.</p>
-                    </a>
-                </article>
+        <section id="publicaciones">
+            <h3>Últimas publicaciones</h3>
+            <div >
+                     <article>
+                        <a href="blog.html"><img src="img/news_01.jpg" class="publicaciones_img">
+                        <h4>Que significa ser el super activador</h4>
+                        <p>Ser super activador significa poner en movimiento todos tus deseos para conquistar todos tus objetivos. </p>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="blog.html"><img src="img/news_02.jpg" class="publicaciones_img">
+                        <h4>Herramientas para calmar la ansiedad en Coronavirus</h4>
+                        <p>En estos momentos de pandemia te guiaré para poder calmar la ansiedad y sentirte pleno.</p></a>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="blog.html"><img src="img/news_03.jpg" class="publicaciones_img">
+                        <h4>Guia para principiantes en meditación</h4>
+                        <p>Así que quieres empezar con la meditación, te ayudare para que puedas ejercitar esta maravillosa actividad.</p>
+                        </a>
+                    </article>
                 </div>
         </section>
         <section id="tienda-libros">
@@ -76,11 +105,12 @@
                 <ul >
                     <li>Ver a través de la lente del amor</li>
                     <li>Ríndete a las soluciones creativas</li>
-                    <li>La acción inspirada despeja el caminoEn la quietud que recibimos</li>
+                    <li>La acción inspirada despeja el camino</li>
+                    <li>En la quietud que recibimos</li>
                     <li>La compasión crea conexión</li>
                     <li>Tu eres el gurú</li>
                 </ul>
-                <a href="tienda.html" class="button">Compralo YA!</a>
+                <a href="tienda.html" class="button">CÓMPRALO YA!</a>
             </div>
         </section>
         <footer class="footer">

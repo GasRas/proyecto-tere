@@ -1,39 +1,10 @@
 header {
     position: sticky;
     top: 0;
+    z-index: 2;
     background-color: #fff8ee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     grid-area: header;
-        ul{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            margin: 1rem;
-                a{
-                    text-decoration: none;
-                    font-family: 'Lora', serif;
-                    font-size: 16px;
-                    text-transform: uppercase;
-                    color: #756663;
-                    margin-left: 25px;
-/*                         a::after{
-                            content:"a" ;
-                            display: block;
-                            width: 3px;
-                            height: 1px;
-                            background-color: #ada9a9;
-                            transition: width 1s, height 1s;
-                        }
-                        a:hover ::after{
-                            width: 10px;
-                            height: 10px;
-                        }
- */             }
-        }
     @media (max-width:768px) {
-                        display: none;
-                    }
+        background-color:#756663 ;
+    }
 }

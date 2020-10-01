@@ -5,8 +5,9 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    @media (max-width:768px) {
+    @media (max-width: 1199px) {
         flex-direction: column;
+        background-color: white;
 }
     div {
         display: flex;
@@ -14,11 +15,43 @@
     }
 }
 .bio__hola_img-phone {
-    @media (max-width:768px) {
+    @media (max-width: 767px) {
         width: 95%;
     }
+    @media (max-width: 1199px) {
+        width: 100%;
+    }
 }
-
+/* .bio__hola_firma {
+    width: 300px;
+    :hover path {
+        animation: animate-hola 2s linear forwards
+    }
+    @keyframes animate-hola
+    {
+        0%
+        {
+            stroke-dashoffset: 0;
+        }
+        40%
+        {
+            stroke-dashoffset: 700;
+        }
+        80%
+        {
+            stroke-dashoffset: 1400;
+        }
+    }
+     path {
+        fill: transparent;
+        stroke-width: 1;
+        stroke: #31e8ff;
+        stroke-dasharray: 700;
+        stroke-dashoffset: 0;
+        
+        }
+}
+ */
 .texto-bio {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: grey;
@@ -32,25 +65,37 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    height: 100vh;
-    background-image: url("../img/img-a.png");
     background-size: initial;
     background-repeat: no-repeat;
     background-position: left top;
-    @media (max-width:768px) {
+    @media (max-width: 1199px) {
         background-size: contain;
         align-items: flex-start;
     }
-            div {
+}
+.bio_images_contenedor {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                flex-direction: column;
-                width: 600px;
-                margin-right: 13%;
-                @media (max-width:768px) {
+                margin: 0 100px;
+                @media (max-width: 1199px) {
                     width: 100%;
-                    margin-top: 70%;
-                }
-            }
+                    flex-direction: column;
+                    margin: 0;
+}
+.bio_images_div {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                margin: 0px;
+}
+.bio_images_foto {
+    @media (max-width: 767px) {
+        width: 400px;
+    }
+    @media (min-width: 768px) and (max-width: 1199px) {
+        width: 600px;
+    }
+}
 }

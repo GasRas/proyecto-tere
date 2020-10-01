@@ -12,7 +12,7 @@
     background-color: none;
     border-color: #df9862;
     transition: background-color 1s, border-color 0.8s;
-    @media (max-width:768px) {
+    @media (max-width:767px) {
         font-size: 12px;
         margin-top: 5px;
     }
@@ -37,10 +37,24 @@
     background-color: none;
     border-color: white;
     transition: background-color 1s, border-color 0.8s;
+    @media (max-width:1199px) {
+        font-size: 15px;
+    }
 }
 .button-claro:hover {
     background-color: white;
     border-color: white;
     color: #df9862;
     text-decoration: none;
+    @media (max-width:768px) {
+        font-size: 15px;
+    }
+}
+.button-centrado {
+    @media (max-width:767px) {
+    width: 49%;
+    }
+    @media (min-width: 768px) and (max-width: 1199px){
+        width: 48%;
+    }
 }
