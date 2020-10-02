@@ -7,7 +7,7 @@
                         "publicaciones"
                         "index-podcast"
                         "footer";
-    grid-template-rows: 80px 100vh 350px 1.3fr 1.1fr 1.3fr ; 
+    grid-template-rows: 80px 100vh 350px 1fr 1.1fr 1fr ; 
     grid-template-columns: 100%;
     @media (max-width: 1199px) {
         grid-template-rows: 60px 100vh 430px 0.4fr 1.1fr 0.45fr; 

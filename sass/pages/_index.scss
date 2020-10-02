@@ -13,10 +13,9 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 70%;
+            width: 80%;
         }
 }
-
 .hero {
     color: white;
     font-size: 90px;
@@ -36,7 +35,7 @@
     justify-content: center;
 }
 .index-conectado {
-    width: 50%;
+    width: 70%;
     padding-left: 100px;
     @media (max-width: 1199px) {
         width: auto;
@@ -50,6 +49,7 @@
     justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
+    padding: 40px;
     @media (max-width: 1199px) {
         flex-direction: column;
     }
@@ -61,6 +61,7 @@
     }
 }
 .index__podcast_img-phone {
+    width: 80%;
     @media (max-width: 1199px) {
         width: 95%;
     }
@@ -92,17 +93,27 @@ height: 468px;
 display: flex;
 align-items: center;
 justify-content: center;
-@media (max-width: 1199px) {
+@media (max-width: 767px) {
     padding: 5px;
     width: fit-content;
     background-size: contain;
     height: 400px;
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+    padding: 5px;
+    width: fit-content;
+    background-size: contain;
+    width: 750px;
+    height: 431px;
+}
 }
 .vivo-screenshot {
     width: 595px;
-    @media (max-width: 1199px) {
-        width: 80%;
+    @media (max-width: 767px) {
+        width: 78%;
+    }
+    @media (min-width: 768px) and (max-width: 1199px) {
+        width: 78%;
     }
 }
 .carousel-inner img {

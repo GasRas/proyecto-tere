@@ -12,18 +12,21 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: flex-start;
-            width: 60%;
+            align-items: center;
+            text-align: center;
+            width: 70%;
+            @media (max-width: 1199px) {
+                text-align: left;
+                align-items: flex-start;
+                width: 100%;
+            }
             h3 {
                 text-align: center;
+                @media (max-width: 1199px) {
+                    text-align: left;
+                }
             }
-            @media (max-width: 1199px) {
-                width: 100%;
-               h3 {
-                   text-align: left;
-               } 
-            }
-        }
+        } 
 }
 #tienda-productos {
     grid-area: tienda-productos;
@@ -94,3 +97,13 @@
     }
 }
 
+.tienda_list{
+    list-style-type: circle;
+    font-size: 17px;
+    color: grey;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 25px;
+    @media (max-width:767px) {
+        font-size: 15px;
+    }
+}

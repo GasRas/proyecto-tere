@@ -44,9 +44,9 @@ section#empieza {
     margin-top: 10px;
 }
 .empieza__form--padding {
+    padding: 0px;
+    @media (max-width: 767px){
     padding: 10px;
-    @media (min-width: 768px) and (max-width: 1199px){
-    padding: 0;
     }
 }
 .empieza__img-phone {
@@ -62,4 +62,8 @@ section#empieza {
 .empieza_h1_resp{
     font-size: 61px;
 }
-
+.empieza_form_nota {
+    @media (min-width: 1200px) {
+        width: 70%;
+    }
+}

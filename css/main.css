@@ -11,7 +11,7 @@ li {
 #grillaindex {
   display: grid;
   grid-template-areas: "header" "index-hero" "index-conectado" "index-vivo" "publicaciones" "index-podcast" "footer";
-  grid-template-rows: 80px 100vh 350px 1.3fr 1.1fr 1.3fr;
+  grid-template-rows: 80px 100vh 350px 1fr 1.1fr 1fr;
   grid-template-columns: 100%;
 }
 @media (max-width: 1199px) {
@@ -324,7 +324,6 @@ nav ul a {
   background-color: #2e3133;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
 }
 @media (max-width: 1199px) {
@@ -338,6 +337,9 @@ nav ul a {
   flex-direction: column;
 }
 
+.bio__hola_img-phone {
+  width: 80%;
+}
 @media (max-width: 767px) {
   .bio__hola_img-phone {
     width: 95%;
@@ -583,11 +585,11 @@ section#empieza {
 }
 
 .empieza__form--padding {
-  padding: 10px;
+  padding: 0px;
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (max-width: 767px) {
   .empieza__form--padding {
-    padding: 0;
+    padding: 10px;
   }
 }
 
@@ -608,6 +610,12 @@ section#empieza {
   font-size: 61px;
 }
 
+@media (min-width: 1200px) {
+  .empieza_form_nota {
+    width: 70%;
+  }
+}
+
 #index-hero {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -626,7 +634,7 @@ section#empieza {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  width: 80%;
 }
 
 .hero {
@@ -654,7 +662,7 @@ section#empieza {
 }
 
 .index-conectado {
-  width: 50%;
+  width: 70%;
   padding-left: 100px;
 }
 @media (max-width: 1199px) {
@@ -673,6 +681,7 @@ section#empieza {
   justify-content: space-evenly;
   flex-direction: row;
   align-items: center;
+  padding: 40px;
 }
 @media (max-width: 1199px) {
   #index-podcast {
@@ -686,6 +695,9 @@ section#empieza {
   align-items: flex-start;
 }
 
+.index__podcast_img-phone {
+  width: 80%;
+}
 @media (max-width: 1199px) {
   .index__podcast_img-phone {
     width: 95%;
@@ -727,7 +739,7 @@ section#empieza {
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 1199px) {
+@media (max-width: 767px) {
   .vivo-laptop {
     padding: 5px;
     width: -webkit-fit-content;
@@ -737,13 +749,29 @@ section#empieza {
     height: 400px;
   }
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .vivo-laptop {
+    padding: 5px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    background-size: contain;
+    width: 750px;
+    height: 431px;
+  }
+}
 
 .vivo-screenshot {
   width: 595px;
 }
-@media (max-width: 1199px) {
+@media (max-width: 767px) {
   .vivo-screenshot {
-    width: 80%;
+    width: 78%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .vivo-screenshot {
+    width: 78%;
   }
 }
 
@@ -777,16 +805,21 @@ section#empieza {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  width: 60%;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+}
+@media (max-width: 1199px) {
+  #tienda-hero .tienda-hero {
+    text-align: left;
+    align-items: flex-start;
+    width: 100%;
+  }
 }
 #tienda-hero .tienda-hero h3 {
   text-align: center;
 }
 @media (max-width: 1199px) {
-  #tienda-hero .tienda-hero {
-    width: 100%;
-  }
   #tienda-hero .tienda-hero h3 {
     text-align: left;
   }
@@ -875,6 +908,19 @@ section#empieza {
 @media (max-width: 1199px) {
   .tienda__hero_img-phone {
     width: 60%;
+  }
+}
+
+.tienda_list {
+  list-style-type: circle;
+  font-size: 17px;
+  color: grey;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-left: 25px;
+}
+@media (max-width: 767px) {
+  .tienda_list {
+    font-size: 15px;
   }
 }
 
@@ -1074,7 +1120,7 @@ label {
 
 textarea {
   height: 100px;
-  width: 605px;
+  width: 630px;
 }
 @media (max-width: 767px) {
   textarea {
@@ -1256,8 +1302,4 @@ p {
   .texto-box {
     width: 100%;
   }
-}
-
-ul .a {
-  list-style-type: circle;
 }
