@@ -34,10 +34,10 @@
                          "blog-header"
                          "blog-posts"
                         "footer";
-    grid-template-rows: 80px 500px 850px ; 
+    grid-template-rows: 80px 500px ; 
     grid-template-columns: 100%;
     @media (max-width: 1199px) {
-        grid-template-rows: 60px 400px 1800px ; 
+        grid-template-rows: 60px 400px  ; 
     }
 }
 #grillatienda {
